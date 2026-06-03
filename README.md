@@ -1,2 +1,2 @@
 # nvidia-portfolio
-This repository will be used to build a portfolio that contains skills that are applied at a high level, at NVIDIA.
+This repository contains applied CUDA and C++ projects for optimized parallel computing using the NVIDIA GTX 1650 GPU.
