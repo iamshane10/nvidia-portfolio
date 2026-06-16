@@ -2,8 +2,8 @@
 
 __global__ void matrixVector(float *A, float *B, float *C, int M, int N)
 {
-    int row = blockDim.x * blockIdx.x + threadIdx.x;
-    int col = blockDim.y * blockIdx.y + threadIdx.y;
+    int row = blockDim.y * blockIdx.y + threadIdx.y;
+    int col = blockDim.x * blockIdx.x + threadIdx.x;
     if (row < M && col < N)
     {
         C[row * N + col] += A[row * N + col] + B[row * N + col];
